@@ -9,14 +9,14 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-       <version>0.0.1-SNAPSHOT</version>
-<packaging>war</packaging>
+        <version>4.1.0</version>
         <relativePath/>
     </parent>
 
     <groupId>soa</groupId>
     <artifactId>gateway3</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>war</packaging>
 
     <name>gateway3</name>
     <description>API Gateway with Eureka</description>
@@ -28,19 +28,16 @@
 
     <dependencies>
 
-        <!-- Spring Cloud Gateway MVC -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-gateway-server-webmvc</artifactId>
         </dependency>
 
-        <!-- Eureka Client -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
 
-        <!-- DevTools -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
@@ -48,7 +45,6 @@
             <optional>true</optional>
         </dependency>
 
-        <!-- Test -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-webmvc-test</artifactId>
@@ -59,7 +55,6 @@
 
     <dependencyManagement>
         <dependencies>
-
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
@@ -67,18 +62,15 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-
         </dependencies>
     </dependencyManagement>
 
     <build>
         <plugins>
-
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
-
         </plugins>
     </build>
 
